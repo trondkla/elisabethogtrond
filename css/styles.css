@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,latin-ext);
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+  background-color: white;
+  color: #E9EFFA;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/*
+Tardis farger:
+Svart: 05091E
+Blå: #102372
+Hvit: E9EFFA
+Mørkest blå: #003B6F;
+Mørk blå: 272D70
+
+
+#102372
+*/
+
+
+#tardis {
+  color: #E9EFFA;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+a, a:hover, a:visited {
+  color: #E9EFFA;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.column.left {
+  background: #102372;  /* Tardis blue <3 */
+  text-align: center;
+}
+
+.column.left header {
+  border-bottom: 2px solid rgba(212,228,239,1);
+  display: inline-block;
+  margin-top: 3em;
+}
+
+.column.left header h1 {
+  display: inline-block;
+  padding: 0em 0.1em;
+  margin: 0em;
+  font-size: 3em;
+}
+
+.column.left header h3 {
+  display: inline-block;
+  vertical-align: super;
+  margin: 0.6em 0.5em;
+  font-size: 1.5em;
+}
+
+.hoved.bilde {
+  display: block;
+  width: 100%;
+}
+
+.column.right {
+  background: #102372;
+  color: #E9EFFA;
+  position: relative;
+}
+
+.kalender {
+  width: 210px;
+  font-size: 14px;
+  padding: 0.5em 1em;
+  border: 1px solid #E9EFFA;
+  margin: 0em auto 0em auto;
+  text-align: center;
+  outline: 3px solid #E9EFFA;
+  outline-offset: 5px;
+}
+
+.kalender h1 {
+  border-bottom: 1px solid #E9EFFA;
+  padding: 0.2em 1em;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 90%;
+}
+
+.kalender ul {
+  margin: 0;
+  padding: 0em;
+  list-style: none;
+}
+
+.kalender .rad.datoer {
+  font-weight: bold;
+  padding-bottom: 0.2em;
+}
+
+.kalender .rad {
+  padding: 0.3em 0em;
+}
+
+.kalender .rad > ul > li {
+  display: inline-block;
+  text-align: center;
+  width: 1.5em;
+}
+
+.kalender .valgt {
+  border: 2px solid #E9EFFA;
+  border-radius: 100px;
+  background: #E9EFFA;
+  color: #102372;
+  font-weight: bold;
+}
+
+@media (max-width: 811px) {
+  body {
+    background: #102372;
+  }
+  .column.left {
+    margin-bottom: 2em;
+  }
+
+  .column.right {
+    text-align: center;
+    margin: 0em auto;
+  }
+
+  .kalender {
+    margin-bottom: 3em;
+  }
+
+  .lite.bilde {
+    margin: 0em auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .lite.bilde {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 810px) {
+
+  .aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #tardis {
+    height: 600px;
+    display: flex;
+  }
+  .column.left {
+    width: 66%;
+    border-radius: 20px 0px 0px 20px;
+  }
+  .column.right {
+    width: 33%;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .hoved.bilde {
+    display: block;
+    width: 100%;
+    border-radius: 20px 0px 0px 0px;
+  }
+
+  .lite.bilde {
+    position: absolute;
+    bottom: 0em;
+    display: block;
+    width: 100%;
+    padding: 1em 0em 0em 0em;
+    border-radius: 0px 0px 20px 0px;
+  }
+
+  .kalender {
+    margin: 3em 2em 0em 2em;
+  }
+}
