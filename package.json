@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "server": "node server.js",
-    "compile": "browserify -t reactify --es6 -t babelify --presets react  js/app.jsx -o build/app.js",
+    "compile": "browserify -t reactify --es6 -t babelify --presets react js/app.jsx -o build/app.js",
     "watch": "watchify js/app.jsx -t reactify --es6 -o build/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "npm run compile"
+    "postinstall": "mkdir -p build && npm run compile"
   },
   "repository": {
     "type": "git",
