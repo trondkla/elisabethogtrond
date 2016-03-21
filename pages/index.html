@@ -1,0 +1,57 @@
+{% extends "./layout.html" %}
+
+{% block content %}
+<section class="boxes">
+    <section class="place box">
+        <header class="header">
+            <a href="/sermoni">
+                <h2>Sermoni</h2>
+            </a>
+        </header>
+        <section class="content">
+            <ul class="iconlist">
+                <li>
+                    <span class="iconlist-icon fa fa-map-marker"></span>
+                    <div class="text">
+                        <p class="kirke">Hoeggen Kirke,</p>
+                        <p class="adresse">Nordre Risvolltun 2,</p>
+                        <p class="postinfo">7036 Trondheim</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="iconlist-icon fa fa-calendar"></span>
+                    <div class="text">13. august 2016</div>
+                </li>
+                <li>
+                    <span class="iconlist-icon fa fa-clock-o"></span>
+                    <div class="text">15:00 - 16:15</div>
+                </li>
+            </ul>
+            <a class="les-mer-lenke" href="/sermoni">Mer info <i class="fa fa-chevron-circle-right"></i></a>
+        </section>
+    </section>
+
+    <section class="party box">
+        <header class="header">
+            <h2>Fest</h2>
+        </header>
+        <section class="content">
+            <p>Mer info kommer</p>
+        </section>
+    </section>
+
+    <section class="wishlist box">
+        <header class="header">
+            <h2>Ønskeliste</h2>
+        </header>
+
+        <section id="wishlist"></section>
+        <a class="see-all-wishes" href="/onskeliste">Se hele listen <i class="fa fa-chevron-circle-right"></i></a>
+    </section>
+
+</section>
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="pages/index.js"></script>
+{% endblock %}

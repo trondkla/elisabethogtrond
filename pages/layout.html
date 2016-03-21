@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="no">
+<head>
+	<meta charset="utf-8">
+
+	<title>Bryllupet til Elisabeth og Trond</title>
+	<meta name="description" content="Informasjon om Elisabeth Solheim og Trond Klakkens bryllup" />
+	<meta name="author" content="Trond Klakken" />
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link async href='https://fonts.googleapis.com/css?family=Roboto:100,100italic,200italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<h1 class="title"><a class="no-decoration" href="/">Elisabeth og Tronds bryllup</a></h1>
+
+	<section class="cover-image">
+    	<img src="https://elisabethogtrond-3291.restdb.io/media/56e4b94e606df658000010e1/?s=w" />
+    </section>
+	<main class="main">
+	    <section class="we-are-marrying">
+    	    <h2>Vi gifter oss!</h2>
+    	    <p>13. august 2016</p>
+	    </section>
+
+        <section class="site-content">
+            {% block content %}{% endblock %}
+        </section>
+
+        <section class="days-until">
+            <div class="counter">
+                <span class="days">
+                    <i class="heart fa fa-heart-o"></i>
+                    <p class="text"></p>
+                </span>
+            </div>
+            <h2>dag<span class="flertall">er</span> <span class="verb">til</span> bryllupet!</h2>
+        </section>
+	</main>
+	<script type="text/javascript" src="app.js"></script>
+    {% block javascript %}{% endblock %}
+</body>
+</html>
