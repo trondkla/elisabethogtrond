@@ -7,8 +7,8 @@
     "server": "node server.js",
     "compile": "browserify -t reactify --es6 -t babelify --presets react  js/app.jsx -o build/app.js",
     "watch": "watchify js/app.jsx -t reactify --es6 -o build/app.js",
-    "compile2": "babel --presets react js --out-dir build && browserify -t babelify --presets react build/app.js -o build/main-app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "NODE_ENV=production node_modules/browserify/bin/cmd.js",
   },
   "repository": {
     "type": "git",
