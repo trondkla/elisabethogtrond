@@ -146,9 +146,21 @@ a {
     }
 }
 
+/*
 .boxes .box.wishlist {
     max-width: 30em;
     min-width: 30em;
+}
+*/
+
+.boxes {
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+}
+
+.boxes .box {
+    text-align: left;
 }
 
 .box .header {
@@ -183,8 +195,20 @@ a {
 
 .box .les-mer-lenke {
     display: inline-block;
-    text-align: right;
-    width: 100%;
+    margin-left: auto;
+    float: right;
+    padding: 0.5em 1em;
+    background: #f07677;
+    color: white;
+}
+
+.box .onske {
+    max-width: 100%;
+}
+
+.onske.tilbords {
+    background: #000000;
+    padding: 0.5em;
 }
 
 .counter {
