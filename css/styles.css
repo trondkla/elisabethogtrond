@@ -27,6 +27,32 @@ body > .title {
     font-weight: 400;
 }
 
+.nav {
+
+}
+.nav ul {
+    list-style: none;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    width: 100%;
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    justify-content: space-around;
+    margin: 1em 0em;
+    padding: 0em;
+}
+
+.nav li a {
+    color: white;
+    background: rgb(240, 118, 119);
+    padding: 0.5em;
+    margin: 0.5em;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
 a {
     color: rgb(240, 118, 119);
 }
@@ -35,24 +61,36 @@ a {
     text-decoration: none;
 }
 
+.home {
+    text-align: center;
+    text-decoration: none;
+}
+
+.rings {
+    width: 2em;
+    float: left;
+    margin-left: 1em;
+    margin-right: -1em;
+    display: inline-block;
+    cursor: pointer;
+}
+
 .cover-image {
     margin: auto;
     text-align: center;
 }
 
-.we-are-marrying {
+.cover-image img {
+    max-height: 500px;
+}
+
+.we-are-getting-married {
     text-align: center;
 }
 
-.we-are-marrying h2 {
-    font-size: 36px;
-    font-weight: 100;
-}
-
-.we-are-marrying p {
+.we-are-getting-married p {
     font-size: 1.5em;
     font-weight: bold;
-    padding-bottom: 2em;
 }
 
 .wishlist ul {
@@ -69,6 +107,9 @@ a {
 }
 
 .wishlist .wish {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
     margin: auto;
     cursor: pointer;
@@ -76,13 +117,21 @@ a {
 }
 
 .wishlist .wish .image {
-    flex: 2;
+    -webkit-box-flex: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
+    width: 40%;            /* For old syntax, otherwise collapses. */
+    -webkit-flex: 2;       /* Safari 6.1+. iOS 7.1+, BB10 */
+    -ms-flex: 2;           /* IE 10 */
+    flex: 2;               /* NEW, Spec - Firefox, Chrome, Opera */
     margin-left: auto;
     text-align: right;
 }
 
 .wishlist .wish .details {
-    flex: 3;
+    -webkit-box-flex: 3;   /* OLD - iOS 6-, Safari 3.1-6 */
+    width: 60%;            /* For old syntax, otherwise collapses. */
+    -webkit-flex: 3;       /* Safari 6.1+. iOS 7.1+, BB10 */
+    -ms-flex: 3;           /* IE 10 */
+    flex: 3;               /* NEW, Spec - Firefox, Chrome, Opera */
 }
 
 .wishlist .see-all-wishes {
@@ -97,7 +146,7 @@ a {
 
 .site-content {
     background: #f1f1f1;
-    padding: 3em 3em;
+    padding: 1em 0.5em;
     margin: auto;
     text-align: center;
 }
@@ -115,7 +164,11 @@ a {
 
 @media (min-width: 1251px) {
     .boxes {
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
         display: flex;
+        -webkit-justify-content: space-around; /* Safari 6.1+ */
         justify-content: space-around;
     }
 }
@@ -204,6 +257,7 @@ a {
 
 .box .onske {
     max-width: 100%;
+    margin-top: 0.5em;
 }
 
 .onske.tilbords {
@@ -218,7 +272,6 @@ a {
 
 .days-until {
     text-align: center;
-    padding: 3em;
 }
 
 .days-until h2 {
