@@ -28,8 +28,8 @@ app.get('/', function (req, res) {
     res.render('index', model);
 });
 
-app.get('/sermoni', function (req, res) {
-    res.render('sermoni');
+app.get('/seremoni', function (req, res) {
+    res.render('seremoni');
 });
 
 app.get('/onskeliste', function (req, res) {
