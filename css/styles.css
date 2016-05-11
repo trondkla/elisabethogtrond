@@ -182,7 +182,6 @@ a {
 }
 
 .box a {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -322,4 +321,8 @@ a {
 .iconlist li {
     border-top: 1px solid #ccc;
     padding: 0.8em 0em;
+}
+
+.hotelliste {
+    padding-left: 1.5em;
 }

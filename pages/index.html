@@ -32,7 +32,7 @@
                     <span class="iconlist-icon fa fa-map-marker"></span>
                     <div class="text">
                         <p class="sted">Hoeggen Kirke,</p>
-                        <p class="adresse">Nordre Risvolltun 2,</p>
+                        <p class="adresse"><a href="https://www.google.no/maps/place/Hoeggen+kirke/@63.3979164,10.4274237,17z/data=!3m1!4b1!4m5!3m4!1s0x466d31d3d25e001d:0xf7d4c18a100e9e80!8m2!3d63.397914!4d10.4296124?hl=en" target="_blank" title="Vis i kart">Nordre Risvolltun 2</a>,</p>
                         <p class="postinfo">7036 Trondheim</p>
                     </div>
                 </li>
@@ -58,7 +58,11 @@
                 <li>
                     <span class="iconlist-icon fa fa-map-marker"></span>
                     <div class="text">
-                        <p>Sted kommer</p>
+                        <div class="text">
+                        <p class="sted"><a href="http://www.autronicahallen.no" target="_blank" title="Gå til Autronicahallens nettside">Autronicahallen <i class="fa fa-link"></i></a></p>
+                        <p class="adresse"><a href="https://www.google.no/maps/place/Autronicahallen/@63.4447811,10.452627,17z/data=!3m1!4b1!4m5!3m4!1s0x466d3103032d4811:0x92358e27a28eaf8b!8m2!3d63.4447787!4d10.4548157?hl=en" title="Vis i kart">Haakon VIIs gate 4</a>,</p>
+                        <p class="postinfo">7041 Trondheim</p>
+                    </div>
                     </div>
                 </li>
                 <li>
@@ -76,6 +80,25 @@
                 </li>
             </ul>
             <!-- <a class="les-mer-lenke" href="/fest">Les mer</a> -->
+        </section>
+    </section>
+
+
+    <section class="box overnatting">
+        <header class="header">
+            <h2>Overnatting</h2>
+        </header>
+
+        <section class="content">
+            <p><a href="https://www.google.no/maps/search/Hotels/@63.4441836,10.4376115,14z/data=!3m1!4b1!4m8!2m7!3m6!1sHotels!2sAutronicahallen,+Haakon+VIIs+gate+4,+7041+Trondheim!3s0x466d3103032d4811:0x92358e27a28eaf8b!4m2!1d10.4548157!2d63.4447787?hl=en" target="_blank">Klikk her</a> for å se de nærmeste hotellene til festlokalet.</p>
+            <b>Utvalgte hotell:</b>
+            <ul class="hotelliste">
+                <li><a href="https://www.scandichotels.com/hotels/norway/trondheim/scandic-nidelven"><abbr title="Vunnet norgest beste hotellfrokost flere år på rad. Her skal brudeparet overnatte">Scandic Nidelven*</abbr></a> <br />Parkering, 1250 kr</li>
+                <li><a href="https://www.nordicchoicehotels.no/clarion/clarion-hotel-trondheim/?gclid=CjwKEAjwjca5BRCAyaPGi6_h8m8SJADryPLh6Pe6ACLhvY5i1YMCQEnt9KePO7IUprgatWLZP0wZdRoCqw7w_wcB">Clarion Hotel &amp; Congress Trondheim</a> <br />Parkering, 1100 kr</li>
+                <li><a href="http://book.bestwestern.com/bestwestern/NO/Trondheim-hotels/BEST-WESTERN-Chesterfield-Hotel/Hotel-Overview.do?propertyCode=73090">Best Western Chesterfield Hotel</a> <br />Parkering, 850 kr</li>
+                <li><a href="http://trondheimvandrerhjem.no/">Trondheim Vandrerhjem</a> <br />Parkering, fra 300,-</li>
+            </ul>
+            <p>P betyr har parkering</p>
         </section>
     </section>
 
@@ -104,6 +127,10 @@
     </section>
 
 </section>
+{% endblock %}
+
+{% block footer %}
+
 {% endblock %}
 
 {% block javascript %}
